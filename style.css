@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+.headshape{
+
+    font-family: 'Fira Code' monospace;
+    
+    
+    
+}
+header h1 {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(0, 255, 0);
+    padding: 5px;
+    
+}
+
+p{
+color: rgb(0, 255, 0);
+font-size: 20px;
+text-align: left;
+font-family: 'Fira Code' monospace;
+text-align: justify;
+
+line-height: 1;
+}
+
+.bodyshape {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    padding: 50px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="style.css">
+  
+    
+
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: color 0.5s ease-in-out;
+            background-color: #f2f2f2;
+        }
+
+        h1, h2, p {
+            transition: color 0.5s ease-in-out;
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .service-button {
+            flex: 1;
+            padding: 15px 30px;
+            background-color: rgba(1, 19, 31, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .service-button:hover {
+            background-color: rgba(1, 51, 85, 0.7);
+        }
+        @keyframes blink{
+            0%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+       /* Ajuste do background */
+            #video-background {          
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 90%;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: #fff;
+        }
+        /* Barra de navegação */
+        
+        nav {
+            background-color:rgba(0, 0, 0, 0.6
+            );
+            overflow: hidden;
+           /* opacity: 70%;*/
+            
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: rgb(0, 255, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: chartreuse;
+            color: rgba(0, 0, 0, 0.5);
+        
+        
+        }
+        body {
+            font-family: Fira Code, monospace;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            color:rgb 0,255,0;
+            margin-bottom: 10px; /* Ajuste o espaçamento inferior conforme necessário */
+        }
+
+        h2 {
+            color:0,255,0;;
+            margin-top: 0.5px; /* Ajuste o espaçamento superior conforme necessário */
+            margin-bottom: 0.5px; /* Ajuste o espaçamento inferior conforme necessário */
+        }
+
+        p {
+            color:rgb 0,255,0;
+            margin-bottom: 15px; /* Ajuste o espaçamento inferior conforme necessário */
+        }
+        
+       
+    </style>
+    <header class="headshape">
+            
+    <h1  id="elementEL">Name: Roger Oliveira</h1>
+    
+    <h1 id="elementER">Current Job: Technical support/information security </h1>
+
+
+        </style>
+</header>
+    
+<body class="bodyshape"> 
+ <video id="video-background" autoplay loop muted src="./Videos/glitch_-_36784 (1080p).mp4"></video>
+
+ <nav>
+    <ul>
+        <li><a href="./apresentation.html">Apresentation</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Jobs</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div>
+   
+</body>
+</html>
+
+<h1>Welcome to My Digital Space!</h1>
+
+<p>
+    I'm <strong>Your Name</strong>, and this website is a manifestation of my dedication and passion for the world of technology. Here, you'll find a collection of my works, projects, and experiences in the vast field of Information Technology and Cybersecurity.
+</p>
+
+<h2>My Services:</h2>
+
+<div class="services-container">
+    <a href="./servicesinfra.html" class="service-button">Infra</a>
+    <a href="./serviceswebdev.html" class="service-button">Web Dev</a>
+    <a href="./servicesdesign.html" class="service-button">Design</a>
+    <a href="./servicesother.html" class="service-button">Others</a>
+</div>
+
+</div>
+
+</body>
+ 
+ <script>
+    "use strict";
+    function typeWriter(el) {
+        const textArray = el.innerHTML.split("");
+        el.innerHTML="";
+
+        textArray.forEach((letter, i) => {
+            setTimeout(() =>(el.innerHTML += letter),95 * i);
+            
+        });
+
+    }
+
+   typeWriter(elementER);
+   typeWriter(elementEL);
+   typeWriter(elementET);
+   TypeWriter(elementEY);
+</script> 
+
