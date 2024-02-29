@@ -50,7 +50,7 @@ line-height: 1;
     scale: 1.05;
 }
 .cpp{
-    background-color: black;
+    background-color: rgba(0,0,0,0,5);
     color: white;
     font-size: smaller;
 }
