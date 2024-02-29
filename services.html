@@ -8,42 +8,62 @@
     
 
     <style>
-     body {
+
+body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            transition: color 0.5s ease-in-out;
             background-color: #f2f2f2;
         }
 
-        h1, h2, p {
-            transition: color 0.5s ease-in-out;
-        }
-
-        .services-container {
+        .service-box {
             display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        .service-button {
-            flex: 1;
-            padding: 15px 30px;
-            background-color: rgba(1, 19, 31, 0.5);
-            color: #fff;
-            border: none;
-            border-radius: 0;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 20px;
+            background-color: hwb(219 0% 82%);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            color: rgb(0, 255, 0);
             text-decoration: none;
+            cursor:pointer;
         }
 
-        .service-button:hover {
-            background-color: rgba(1, 51, 85, 0.7);
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            font-size: 16px;
+            text-decoration: none;
+            color: rgb(0, 255, 0);
+        }
+        @font-face {
+            font-family: 'Fira Code';
+            src: url(./Font/FiraCode-Light.ttf) format('truetype');
+        }
+        #elementEL::after{
+            content: '|';
+            margin-left: 5px;
+            animation: blink 0.7s infinite;
         }
         @keyframes blink{
             0%{
@@ -152,24 +172,43 @@
     </ul>
 </nav>
 <div>
-   
-</body>
-</html>
+ 
 
-<h1>Welcome to My Digital Space!</h1>
+    <div class="service-box"><a href="./webdev/mgn.html"></a>
+        <img class="service-image" src="C:\Users\roger\Desktop\Pagina Web\img\button_infra.webp" alt="Service 1">
+        <div class="service-content">
+            <div class="service-title">Network</div>
+            <div class="service-description">
+                I have actively contributed to the design and maintenance of wired and wireless network infrastructures, spanning both 2.4GHz and 5GHz frequencies. My expertise extends to configuring top-tier equipment from industry-leading brands such as Cisco and Intelbras, ensuring the efficiency and security of network environments. With specialized skills, I provide support in implementing and optimizing networks, delivering robust and effective solutions to meet contemporary technological demands.
+            </div>
+        </div>
+    </div>
 
-<p>
-    I'm <strong>Your Name</strong>, and this website is a manifestation of my dedication and passion for the world of technology. Here, you'll find a collection of my works, projects, and experiences in the vast field of Information Technology and Cybersecurity.
-</p>
+    <div  
+      class="service-box">
+        <img class="service-image" src="C:\Users\roger\Desktop\Pagina Web\img\button_dev.jpg" alt="Service 2">
+        <div class="service-content">
+            <div class="service-title">Developer</div>
+            <div class="service-description">
+                During my journey, I have created several programs to assist me, primarily using languages such as AHK, C++, Batch, and others. These programs have been invaluable tools, enhancing my efficiency and problem-solving capabilities. Whether automating tasks with AutoHotKey, diving into low-level programming with C++, or streamlining processes with batch scripting, each endeavor has contributed to my growth as a developer.
+            
+            </div>
+        </div>
+    </div>
+    </a>
+    <div class="service-box">
+        <img class="service-image" src="./img/button_security.jpg" alt="Service 3">
+        <div class="service-content">
+            <div class="service-title">Cybersecurity</div>
+            <div class="service-description">
+                Throughout my journey, I have consistently prioritized information security. My expertise includes working with proxy servers, firewalls, Windows Server, and related technologies. By focusing on these aspects, I ensure a secure and resilient IT environment. Whether implementing robust proxy solutions or configuring advanced firewalls, my commitment to information security remains steadfast.
+            </div>
+        </div>
+    </div>
 
-<h2>My Services:</h2>
-
-<div class="services-container">
-    <a href="./servicesinfra.html" class="service-button">Infra</a>
-    <a href="./serviceswebdev.html" class="service-button">Web Dev</a>
-    <a href="./servicesdesign.html" class="service-button">Design</a>
-    <a href="./servicesother.html" class="service-button">Others</a>
-</div>
+    <div class="center">
+        <a href="./codes.html" class="go-to-codes">Ir para Códigos</a>
+    </div>
 
 </div>
 
