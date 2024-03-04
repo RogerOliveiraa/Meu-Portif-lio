@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codes</title>
 
-    <!-- Add a meta tag to specify the character set -->
-    <meta charset="UTF-8">
-
-    <!-- Link to a mobile-friendly font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <!-- Link to your external stylesheets -->
     <link rel="stylesheet" href="./highlight/styles/default.css">
@@ -18,19 +16,24 @@
 
     <!-- Add a media query for smaller screens -->
     <style>
-        /* Your existing styles here */
-
         body {
             font-family: 'Fira Code', monospace;
             line-height: 1.6;
             margin: 20px;
         }
 
-        nav a {
-            padding: 14px 8px; /* Adjust padding for smaller screens */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
-        h1, h2, p {
+        .navbar-nav a {
+            padding: 14px 16px;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        p {
             margin: 10px 0;
         }
 
@@ -39,34 +42,56 @@
         }
 
         /* Add more adjustments as needed */
-
-        @media only screen and (max-width: 768px) {
-            /* Additional styles for smaller screens */
-            nav {
-                background-color: rgba(0, 0, 0, 0.8);
-            }
-
-            nav a {
-                padding: 10px;
-            }
-
-            h1, h2, p {
-                font-size: 16px;
-            }
-
-            .autohotkey {
-                font-size: 14px;
-            }
-
-            /* Add more adjustments as needed */
-        }
     </style>
 </head>
-<body class="bodyshape">
-    <!-- Your existing HTML content here -->
 
-    <script>
-        // Your existing JavaScript code here
-    </script>
+<body class="bodyshape">
+
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Codes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./apresentation.html">Apresentation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./services.html">Jobs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <h1 id="elementEL">Name: Roger Oliveira</h1>
+        <h1 id="elementER">Current Job: Technical support/information security</h1>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Excel_Verifyer.ahk</h2>
+        <p>
+            I needed to perform maintenance checks to ensure the security of our clients' information.
+            Therefore, I developed this code to read the relevant Excel spreadsheet and show me which clients require
+            some action.
+        </p>
+        <!-- Add your existing code for AutoHotkey here -->
+    </div>
+
+    <div class="container mt-4">
+        <h2>Alarm_clock.cpp</h2>
+        <p>I tried to make an alarm clock that can interact with energy panels like interrupters. Also, it is just a
+            start to automate my home. ^^</p>
+        <!-- Add your existing code for C++ here -->
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your existing JavaScript code here -->
 </body>
+
 </html>
