@@ -135,6 +135,7 @@
 
     </style>
 </head>
+    <h1 elementER>Nome: <Strong>Roger Olviveira<Strong></h1>
 
 <body class="bodyshape">
     <video id="video-background" autoplay loop muted src="./Videos/glitch_-_36784 (1080p).mp4"></video>
@@ -172,6 +173,24 @@
 
     <!-- Bootstrap JS and Popper.js CDN -->
     <script src="./bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+        <script>
+               "use strict";
+    function typeWriter(el) {
+        const textArray = el.innerHTML.split("");
+        el.innerHTML="";
+
+        textArray.forEach((letter, i) => {
+            setTimeout(() =>(el.innerHTML += letter),95 * i);
+            
+        });
+
+    }
+
+   typeWriter(elementER);
+   typeWriter(elementEL);
+   typeWriter(elementET);
+   TypeWriter(elementEY);
+        </script>
 </body>
 
 </html>
