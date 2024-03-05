@@ -1,54 +1,74 @@
+/* Resetting the box model for all elements */
+* {
+    box-sizing: border-box;
+}
 
-
-.headshape{
-
-    font-family: 'Fira Code' monospace;
+/* Custom styling for the header */
+.headshape {
+    font-family: 'Fira Code', monospace;
     color: rgb(0, 255, 0);
     z-index: 1;
-    
-    
-    
 }
+
 header h1 {
     text-align: left;
     font-size: 20px;
     color: rgb(0, 255, 0);
     padding: 5px;
-    font-family: 'Fira Code' monospace;
+    font-family: 'Fira Code', monospace;
 }
 
-p{
-color: rgb(0, 255, 0);
-font-size: 20px;
-text-align: left;
-font-family: 'Fira Code' monospace;
-text-align: justify;
-
-line-height: 1;
+/* Styling for paragraphs */
+p {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+    text-align: justify;
+    line-height: 1;
 }
 
+/* Styling for the main body */
 .bodyshape {
     color: rgb(0, 255, 0);
     font-size: 20px;
     padding: 50px;
-    font-family: 'Fira Code' monospace;
+    font-family: 'Fira Code', monospace;
 }
+
+/* Styling for the "Go to Codes" link */
 .go-to-codes {
     display: inline-block;
     padding: 10px;
     margin-top: 20px;
-    background-color:rgba(0,0,0, 0.5);
-    color:rgb(0, 255, 0); 
-    text-decoration: none; 
-    border-radius: 5px; 
-    transition: background-color 0.3s; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
+
 .go-to-codes:hover {
-    background-color: #191a1b; 
+    background-color: #191a1b;
     scale: 1.05;
 }
-.cpp{
-    background-color:rgba(0,0,0, 0.5);
+
+/* Styling for the code snippets */
+.cpp {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 10px;
+    font-size: smaller;
+}
+
+/* Correcting the navigation bar styling */
+.navbar {
+    background-color: black;
+
+}
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+nav.navbar a {
+    color: rgb(0, 255, 0) !important;
 }
