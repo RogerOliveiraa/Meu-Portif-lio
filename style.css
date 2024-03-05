@@ -51,6 +51,7 @@ p {
 .go-to-codes:hover {
     background-color: #191a1b;
     scale: 1.05;
+    text-transform:uppercase;
 }
 
 /* Styling for the code snippets */
