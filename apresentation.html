@@ -19,7 +19,7 @@
             margin: 0;
             font-family: 'Fira Code', monospace;
             background-color: #282c34;
-            color: #abb2bf;
+            color:rgb(0, 255, 0);
         }
 
         #elementEL::after {
@@ -49,8 +49,13 @@
             z-index: -1;
             opacity: 90%;
         }
+        .navbar-brand {
+            padding: 15px;
+            transition: color 0.5s;
 
-        nav {
+        }
+
+        nav   {
             background-color: #1e1e1e;
             border-bottom: 1px solid #282c34;
             padding: 15px;
@@ -67,17 +72,16 @@
         }
 
         nav a:hover {
-            color: #ffffff !important;
+            color: #000000 !important;
             background-color: rgb(0, 255, 0);
             scale: 1.1;
-            border-radius: 5px;
-            text-decoration-style: dashed;
+          
         }
 
         #content {
             padding: 20px;
-            color: #abb2bf;
-            background-color: rgba(0, 0, 0, 0.4);
+            color:rgb(0, 255, 0);
+            background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
             margin-top: 50px;
         }
@@ -101,9 +105,17 @@
             margin-bottom: 15px;
             font-size: 18px;
         }
-
+  
     </style>
 </head>
+<header class="headshape">
+            
+    <h1  id="elementEL">NAME: Roger Oliveira</h1>
+    
+    <h1 id="elementER">CURRENT JOB: Technical Support/Information Security</h1>
+
+  
+</header>
 
 <body class="bodyshape">
     <video id="video-background" autoplay loop muted src="./Videos/glitch_-_36784 (1080p).mp4"></video>
