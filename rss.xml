@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Exemplo de Feed RSS</title>
-    <link>https://www.exemplo.com</link>
-    <description>Feed de exemplo para demonstração.</description>
+    <title>Conceitos Essensiais em Cyber Segurança</title>
+    <link>https://www.rogeraosilva.com.br/notices.html</link>
+    <description>Na segurança da informação, temos três pilares fundamentais: <Strong>Confidencialidade, Integridade e Disponibilidade.</Strong> Estes princípios são essenciais para proteger os dados e garantir que eles sejam acessíveis, confiáveis e seguros. Vamos explorar cada um desses pilares para entender melhor seu papel na salvaguarda das informações e na manutenção da segurança dos nossos sistemas.</description>
     <language>pt-br</language>
-    <pubDate>Tue, 31 Jul 2024 14:00:00 +0000</pubDate>
+    <pubDate>Tue, 31 Jul 2024 15:30:00 +0000</pubDate>
     <lastBuildDate>Tue, 31 Jul 2024 14:00:00 +0000</lastBuildDate>
     
     <item>
