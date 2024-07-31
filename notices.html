@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentation</title> <link rel="stylesheet" href="style.css">
-  
-    
-
+    <title>Notícias</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         @font-face {
             font-family: 'Fira Code';
             src: url(./Font/FiraCode-Light.ttf) format('truetype');
         }
-        #elementEL::after{
+
+        body {
+            margin: 0;
+            font-family: 'Fira Code', monospace;
+            background-color: #282c34;
+            color: rgb(0, 255, 0);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        #elementEL::after {
             content: '|';
             margin-left: 5px;
             animation: blink 0.7s infinite;
         }
-        @keyframes blink{
-            0%{
+
+        @keyframes blink {
+            0% {
                 opacity: 1;
             }
             100% {
                 opacity: 0;
             }
         }
-       /* Ajuste do background */
-            #video-background {          
+
+        #video-background {
             position: fixed;
             top: 0;
             left: 0;
@@ -34,137 +43,104 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
-            opacity: 90%;
+            opacity: 0.9;
         }
-        #content {
-            position: relative;
-            z-index: 1;
+
+        header {
+            text-align: center;
             padding: 20px;
-            color: #fff;
         }
-        /* Barra de navegação */
-        
+
+        header h1 {
+            margin: 0;
+            color: #61dafb;
+        }
+
         nav {
-            background-color:rgba(0, 0, 0, 0.6
-            );
-            overflow: hidden;
-           /* opacity: 70%;*/
-            
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #282c34;
+            padding: 15px;
+            text-transform: uppercase;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
 
         nav li {
-            float: left;
+            margin: 0 15px;
         }
 
         nav a {
-            display: block;
-            color: rgb(0, 255, 0);
-            text-align: center;
-            padding: 14px 16px;
+            color: #61dafb;
             text-decoration: none;
-            text-transform: uppercase;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
         }
 
         nav a:hover {
-            background-color: chartreuse;
-            color: rgba(0, 0, 0, 0.5);
-        
-        
+            color: #000000;
+            background-color: rgb(0, 255, 0);
+            transform: scale(1.1);
         }
-        body {
-            font-family: Fira Code, monospace;
-            line-height: 1.6;
-            margin: 20px;
+
+        #content {
+            padding: 20px;
+            color: rgb(0, 255, 0);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1, h2, h3 {
+            color: #61dafb;
         }
 
         h1 {
-            color:rgb 0,255,0;
-            margin-bottom: 10px; /* Ajuste o espaçamento inferior conforme necessário */
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
         h2 {
-            color:0,255,0;;
-            margin-top: 0.5px; /* Ajuste o espaçamento superior conforme necessário */
-            margin-bottom: 0.5px; /* Ajuste o espaçamento inferior conforme necessário */
+            font-size: 24px;
+            margin-top: 0.5px;
+            margin-bottom: 10px;
         }
 
         p {
-            color:rgb 0,255,0;
-            margin-bottom: 15px; /* Ajuste o espaçamento inferior conforme necessário */
+            font-size: 18px;
+            margin-bottom: 15px;
         }
-        
-       
     </style>
+</head>
+<body>
     <header class="headshape">
-            
-    <h1  id="elementEL">Nome: Roger Oliveira</h1>
-    
-    <h1 id="elementER">Função: Suporte técnico | Segurança da informação  </h1>
+        <h1 id="elementEL">Nome: Roger Oliveira</h1>
+        <h1 id="elementER">Função: Suporte técnico | Segurança da informação</h1>
+    </header>
 
+    <video id="video-background" autoplay loop muted src="./Videos/glitch_-_36784 (1080p).mp4"></video>
 
-        </style>
-</header>
-    
-<body class="bodyshape"> 
- <video id="video-background" autoplay loop muted src="./Videos/glitch_-_36784 (1080p).mp4"></video>
+    <nav>
+        <ul>
+            <li><a href="./apresentation.html">Apresentation</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Jobs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./notices.html">Notices</a></li>
+        </ul>
+    </nav>
 
- <nav>
-    <ul>
-        <li><a href="./apresentation.html">Apresentation</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./services.html">Jobs</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./notices.html">Notices</a></li>
-    </ul>
-</nav>
-<div>
-    <h1>Notícias</h1>
-
-    <p>
-Aqui, você encontrará informações essenciais sobre <Strong>cibersegurança</Strong>, incluindo novas tecnologias e dicas valiosas para se proteger e manter a segurança no mundo digital. Descubra como se cuidar e se manter informado sobre as melhores práticas de segurança para proteger seus dados e sua privacidade.
-    </p>
-    <h2>Conceitos Essenciais</h2>
-    <ul>
-        <li>
-            Na segurança da informação, temos três pilares fundamentais: <Strong>Confidencialidade, Integridade e Disponibilidade.</Strong> Estes princípios são essenciais para proteger os dados e garantir que eles sejam acessíveis, confiáveis e seguros. Vamos explorar cada um desses pilares para entender melhor seu papel na salvaguarda das informações e na manutenção da segurança dos nossos sistemas.
-        </li><a href="./conceitos_essensiais.html"> Ver Notícia</a>
-    </ul>
-
-
-    <p>Sincerely,<br><strong>Roger Oliveira</strong></p>
-
-</body>
-</html>
-
-
-  
-
-</div>
-
-</body>
- 
- <script>
-    "use strict";
-    function typeWriter(el) {
-        const textArray = el.innerHTML.split("");
-        el.innerHTML="";
-
-        textArray.forEach((letter, i) => {
-            setTimeout(() =>(el.innerHTML += letter),95 * i);
-            
-        });
-
-    }
-
-   typeWriter(elementER);
-   typeWriter(elementEL);
-   typeWriter(elementET);
-   TypeWriter(elementEY);
-</script> 
+    <div id="content">
+        <h1>Notícias</h1>
+        <p>
+            Aqui, você encontrará informações essenciais sobre <strong>cibersegurança</strong>, incluindo novas tecnologias e dicas valiosas para se proteger e manter a segurança no mundo digital. Descubra como se cuidar e se manter informado sobre as melhores práticas de segurança para proteger seus dados e sua privacidade.
+        </p>
+        <h2>Conceitos Essenciais</h2>
+        <ul>
+            <li>
+                Na segurança da informação, temos três pilares fundamentais: <strong>Confidencialidade, Integridade e Disponibilidade.</strong> Estes princípios são essenciais para proteger os dados e garantir que eles sejam acessíveis, confiáve
