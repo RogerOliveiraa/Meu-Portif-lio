@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Exemplo de Feed RSS</title>
+    <link>https://www.exemplo.com</link>
+    <description>Feed de exemplo para demonstração.</description>
+    <language>pt-br</language>
+    <pubDate>Tue, 31 Jul 2024 14:00:00 +0000</pubDate>
+    <lastBuildDate>Tue, 31 Jul 2024 14:00:00 +0000</lastBuildDate>
+    
+    <item>
+      <title>Notícia 1</title>
+      <link>https://www.exemplo.com/noticia1</link>
+      <description>Descrição da notícia 1. Este é um resumo do conteúdo da notícia 1.</description>
+      <pubDate>Tue, 31 Jul 2024 10:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
+      <title>Notícia 2</title>
+      <link>https://www.exemplo.com/noticia2</link>
+      <description>Descrição da notícia 2. Este é um resumo do conteúdo da notícia 2.</description>
+      <pubDate>Tue, 31 Jul 2024 11:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Notícia 3</title>
+      <link>https://www.exemplo.com/noticia3</link>
+      <description>Descrição da notícia 3. Este é um resumo do conteúdo da notícia 3.</description>
+      <pubDate>Tue, 31 Jul 2024 12:00:00 +0000</pubDate>
+    </item>
+
+  </channel>
+</rss>
