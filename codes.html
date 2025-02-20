@@ -148,7 +148,7 @@
 
         OnExit, saida
         global eab := ComObjCreate("Excel.Application")
-        global ab:= eab.Workbooks.Open("LOCAL DO ARQUIVO", 1)
+        global ab:= eab.Workbooks.Open("Path to archive", 1)
         eab.Visible := visibilidade = 1 ? True : False
 
         iNcol := 10
@@ -157,9 +157,9 @@
 
         for i, sCol in sStatus {
             status := eab.Range(sCol).Value
-            if (status == "NAO EM CONFORMIDADE") {
+            if (status == "Not OK") {
                 cliente := eab.Range(sClientes[i]).Value 
-                MsgBox  Entrar em contato com cliente: %cliente%
+                MsgBox  Need some action: %cliente%
             }
         }
     </code></pre>
@@ -184,32 +184,31 @@
 #include <Wire.h>
 #include "RTClib.h"
 
-const int PINO_RELE = 2;    //pino definido para conexao com o rele
-const int HORA = 10;        //variavel de hora 
-const int MINUTO = 53;      //variavel de minuto r
+const int PINO_RELE = 2;    //pin defined for connection to the relay
+const int HORA = 10;        //hour variable
+const int MINUTO = 53;      //minute variable
       
-// modelo de RTC utilizado (DS1307 ou DS3132)
-RTC_DS1307 rtc; //Objeto rtc da classe DS1307
-//RTC_DS3231 rtc; //Objeto rtc da classe DS3132
+// Used RTC model (DS1307 ou DS3132)
+RTC_DS1307 rtc; //Object RTC of class DS1307
+//RTC_DS3231 rtc; //Object RTC of class DS3132
       
 char diasDaSemana[7][12] = {"Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"}; //Dias da semana
 
 void setup () {
-  Serial.begin(9600);                          //Inicializa a comunicacao serial
+  Serial.begin(9600);                          //Iniciate serial comunication
   if (!rtc.begin()) {                         
-    Serial.println("RTC NAO INICIALIZADO"); //Imprime o texto
+    Serial.println("RTC NAO INICIALIZADO"); //print text
     while (1);                             
   }
-  //rtc.adjust(DateTime(2019, 3, 18, 10, 53, 00)); //Ajusta o tempo do RTC para a data e hora definida pelo usuario.
-  delay(100);                                      //100 Milissegundos
-
+  //rtc.adjust(DateTime(2019, 3, 18, 10, 53, 00)); // Adjust the time of RTC to date and time specified by the user
+  delay(100);                                      //100 Millisseconds
   pinMode(PINO_RELE, OUTPUT);
   digitalWrite(PINO_RELE, LOW);
 }
 
 void loop ()
 {
-  DateTime agora = rtc.now();            // Faz a leitura de dados de data e hora
+  DateTime agora = rtc.now();            // Read data of date and time
   Serial.print("Data: ");
   Serial.print(agora.day(), DEC);        
   Serial.print('/');                     
@@ -227,10 +226,10 @@ void loop ()
   Serial.println();                                      
   delay(1000);                                              
 
-  if ((agora.hour() == HORA) && (agora.minute() == MINUTO)) {  //se no instante que hora atual for igual a hora da variavel
-    digitalWrite(PINO_RELE, HIGH);                             //aciona rele
-  } else {                                                     //senao
-    digitalWrite(PINO_RELE, LOW);                              //desaciona o rele
+  if ((agora.hour() == HORA) && (agora.minute() == MINUTO)) {  // if in instant that the time is equal to variable hour
+    digitalWrite(PINO_RELE, HIGH);                             //start rele
+  } else {                                                     //else
+    digitalWrite(PINO_RELE, LOW);                              //stop rele
   }
 }
 
